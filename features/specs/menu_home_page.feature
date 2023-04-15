@@ -1,4 +1,9 @@
 #language: pt
+#O Cucumber possui um analisador de linguagem simples chamado Gherkin.
+#Ele permite que os comportamentos esperados seja especificado em um idioma lógico
+#Para que os clientes possam entender, e ele já foi utilizado de forma exclusiva para 
+#O teste do Ruby como complemento à estrutura BDD Rspec.
+
 
 Funcionalidade: Menu Home Page
 

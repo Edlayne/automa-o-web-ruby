@@ -1,3 +1,11 @@
+#Por questão de segurança ignoramos alguns arquivos
+#Por questão de boas práticas nós não versionamos coisas que não fazem sentido 
+#depencias principalmente por uma questão de performance você não coloca nada que possa impactar no processo de versionamento.
+#log não versionamos nada que for log
+#Reports para que ele não versione a pasta reports já que são prints de tela
+#Gem file lock que é um arquivo de dependencias, porque se não toda que alguém for usar
+#vai precisar baixar o arquivo de dependencias e ele sempre vai baixar a versão mais atualizada.
+
 *.log
 gemfile.lock
 reports
