@@ -4,10 +4,17 @@ on:
   pull_request:
     branches: [ "main" ]
 
+<<<<<<< HEAD
+=======
+workflow_dispatch:
+
+permissions:
+  contents: read
+>>>>>>> 1fec69ed4bb9386e46838d606fbf9600f2dc3de6
 
 jobs:
   test:
-
+    timeout-minutes: 60
     runs-on: ubuntu-latest
 
     steps:
@@ -18,8 +25,16 @@ jobs:
       uses: ruby/setup-ruby@v1
        
       with:
+<<<<<<< HEAD
         ruby-version: 2.7
         bundler-cache: true # executa 'bundle install' e armazena em cache as gems instaladas
+=======
+        ruby-version: '3.1.2'
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      
+    - name: Install bundler
+      run: gem install bundler
+>>>>>>> 1fec69ed4bb9386e46838d606fbf9600f2dc3de6
 
       
     - name: Step 3 Execute test # Executa os Testes em modo headless
