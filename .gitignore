@@ -7,5 +7,5 @@
 #vai precisar baixar o arquivo de dependencias e ele sempre vai baixar a versão mais atualizada.
 
 *.log
-gemfile.lock
+Gemfile.lock
 reports
