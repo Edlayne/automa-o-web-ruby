@@ -16,7 +16,17 @@ CONFIG = YAML.load_file(File.dirname(__FILE__) + "/environments/#{ENVIRONMENT}.y
 World(Pages, Helper)
 
 Capybara.configure do |config|
-    config.default_driver = :selenium_chrome_headless
+    case ENV['BROWSER']
+    when 'chrome_headless'
+      config.default_driver = :selenium_chrome_headless
+    when 'chrome'
+      config.default_driver = :selenium_chrome
+    when 'firefox_headless'
+      config.default_driver = :selenium_headless
+    when 'firefox'
+      config.default_driver = :selenium
+    end
+    
     config.app_host = CONFIG['url_default']
     config.default_max_wait_time = 10
 end

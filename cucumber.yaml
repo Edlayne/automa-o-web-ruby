@@ -1,9 +1,10 @@
-default: -p pretty --publish-quiet -p html -p develop -p chrome
+default: -p pretty --publish-quiet -p html -p production -p chrome
 
 pretty: --format pretty
 develop: ENVIRONMENT=develop
 qa: ENVIRONMENT=qa
 production: ENVIRONMENT=production
+ci: -p pretty --publish-quiet -p html -p production -p chrome_headless
 
 chrome: BROWSER=chrome
 firefox: BROWSER=firefox
