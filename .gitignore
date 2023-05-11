@@ -8,4 +8,4 @@
 
 *.log
 Gemfile.lock
-reports
+reports.*
