@@ -9,7 +9,7 @@ Quando('eu clico no botão {string}') do |btn_name|
   #Aqui invocamos a função click_button passando o parametro, 
   #essa função foi definida la no arquivo menu_home_page.rb // 
   #dentro da pasta pages // Lembrando que essa função foi criado por nos
-  #menu.click_button(btn_name)
+  menu.click_button(btn_name)
 end
 
 Então('sou direcionado para a sessão {string}') do |sessao_name|
